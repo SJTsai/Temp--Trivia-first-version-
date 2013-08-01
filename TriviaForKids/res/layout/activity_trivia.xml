@@ -1,0 +1,120 @@
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_switcher"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background" >
+	
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".TriviaActivity" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="24dp"
+	        android:gravity="center_horizontal"
+	        android:textSize="35sp"
+	        android:textStyle="bold"
+	        android:text="@string/welcome_message" />
+	    
+	    <ImageButton
+	        android:id="@+id/start_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:src="@drawable/start_button" />
+	
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".TriviaActivity" >
+	
+	    <TextView
+	        android:id="@+id/number_questions_answered"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="10dp" />
+	    
+	    <TextView
+	        android:id="@+id/tf_question"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="90dp" />
+	    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+	        <Button
+	            android:id="@+id/true_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="116dp"
+	            android:textSize="50sp"
+	            android:text="@string/true_button" />
+	        
+	        <Button
+	            android:id="@+id/false_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"
+	            android:textSize="50sp"
+	            android:text="@string/false_button" />
+	    
+	    </LinearLayout>
+
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".TriviaActivity" >
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:textSize="35sp"
+	        android:textStyle="bold"
+	        android:paddingBottom="10dp"
+	        android:text="@string/congratulatory_message" />
+	    
+	    <TextView
+	        android:id="@+id/score_display"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="24dp" />
+	    
+	    <Button
+	        android:id="@+id/main_menu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_menu" />
+	
+	</LinearLayout>
+	
+</ViewFlipper>
